@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Benchling Genetic Tool</title>
+	<link href="css/styles.css" rel="stylesheet">
+	<script src="js/raphael.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/connect.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Benchling Genetic Tool</h1>
+		<h4> 
+			<button class="new">New Design</button>
+			<!--<button class="save">Save Design</button>
+			<button class="load">Load Design</button>
+			<button class="export">Export Design</button>-->
+		</h4>
+		<h5>By Harrison</h5>
+	</header>
+	<div id="holder"></div>
+		<div style="margin-left:60px;">
+			<div class="group">
+				<div class="part-list">
+					<h2>Current Parts:</h2>
+					<div id="container"></div>
+					<ul id="sortable">
+					</ul>
+					<button class="deleteFirst">Delete First Part</button> 
+					<button class="renderImage">Render Image</button>
+					<button class="clear">Clear Image</button>
+				</div>
+			</div>
+			<br>
+			<hr>
+				<div id="bytagname1" class="eg">
+				<h3>Add Part</h3>
+					<div class="add-part">
+						<form class="partsForm">
+							<p><label for="part">Part Name: </label><input name="part"></p>
+							<p>
+								<label for="part Type">Part Type:</label>
+								<select name="part Type">
+									<option value="Promoter">Promoter</option>
+									<option value="Ribosomal Binding Site">Ribosomal Binding Site</option>
+									<option value="Coding Region">Coding Region</option>
+									<option value="Termination">Termination</option>
+								</select>
+							</p>
+							<p>
+								<label for="Color">Color:</label>
+								<select name="Color">
+									<option value="Red"; style="color:red">Red</option>
+									<option value="Blue"; style="color:blue">Blue</option>
+									<option value="Green"; style="color:green">Green</option>
+									<option value="Black"; style="color:black">Black</option>
+								</select>
+							</p>
+							<button class="addPart">Add</button>
+						</form>
+					</div>
+					<h3>Add Connection</h3>
+					<div class="add-part">
+						<form class="connectionForm">
+							<p><label for="indexA">Part 1 Index: </label><input name="indexA"></p>
+							<p><label for="indexB">Part 2 Index: </label><input name="indexB"></p>
+							<p>
+								<label for="interType">Interaction Type:</label>
+								<select name="interType">
+									<option value="Promoter">Promotion</option>
+									<option value="Inhibition">Inhibition</option>
+									<option value="Other">Other</option>
+								</select>
+							</p>
+							<button class="drawLine">Add</button>
+						</form>
+					</div>
+				</div>
+			<div id="bytagname2" class="eg">
+				<h3>Show Example</h3>
+				<div style="margin-left:320px;">
+					<ul>
+						<li>Promoter<img src="img/Promoter.png"></li>
+						<li>Ribosome<img src="img/Ribosomal Binding Site.png"></li>
+						<li>Coding <img src="img/Coding Region.png"></li>		
+						<li>Termination<img src="img/Termination.png"></li>	
+					</ul>
+					<h4>Note: Components must be in this order</h4>
+				</div>
+			</div>
+		</div>
+	<br>
+	</div>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
