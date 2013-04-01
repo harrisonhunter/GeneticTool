@@ -1,11 +1,11 @@
 GeneticTool
 ===========
-This is my work on the front end challenge. Simply download or clone the repository and open the index.html file to use.
+This is a little fun project I prototyped. Simply download or clone the repository and open the index.html file to use.
 Hope you enjoy! 
 
 Note: Both the parts list and rendered image are draggable
 
-Known Bugs (Things I would fix if I didn't have 2 tests tomorrow and paper due Friday):
+Known Bugs (Things I would fix and improve with more time):
 
 1.  Should be able to delete by Name
 2.  You shouldn't be able to connect the same two items multiple times
